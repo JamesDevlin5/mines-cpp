@@ -13,7 +13,7 @@ $(EXE_FILE): font.ttf
 font.ttf:
 	@echo "Downloading font ($(FONT_URL))..."
 	@curl -fsSLo "font.zip" $(FONT_URL)
-	@unzip "font.zip" "Hack Regular Nerd Font Complete.ttf"
+	@unzip -q "font.zip" "Hack Regular Nerd Font Complete.ttf"
 	@mv "Hack Regular Nerd Font Complete.ttf" "$@"
 	@$(RM) "font.zip"
 
