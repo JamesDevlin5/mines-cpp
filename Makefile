@@ -18,7 +18,7 @@ font.ttf:
 	@$(RM) "font.zip"
 
 clean:
-	@$(RM) -v $(EXE_FILE)
+	@$(RM) -v $(EXE_FILE) font.ttf
 
 help:
 	@echo "Usage: make {$(EXE_FILE)|clean|help}" 1>&2 && false
